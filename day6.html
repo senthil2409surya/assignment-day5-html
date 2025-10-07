@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mypage</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><strong>Registration</strong></legend>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name here..."
+          required
+        />
+        <br /><br />
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          required
+          placeholder="Enter the Age"
+        /><br /><br />
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="smfnjkmd@gmail.com"
+          required
+        /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+          minlength="6"
+          maxlength="20"
+        /><br /><br />
+        <label>Gender:</label>
+        <label for="gender"> Male</label>
+        <input type="radio" id="gender" name="gender" value="male" />
+        <label for="gender">Fmale</label>
+        <input type="radio" id="gender" name="gender" value="female" />
+        <label for="gender">Other</label>
+        <input
+          type="radio"
+          id="gender"
+          name="gender"
+          value="Other"
+        /><br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+        <label for="contact">Contact:</label>
+        <input
+          type="tel"
+          id="contact"
+          name="contact"
+          placeholder="Enter your number"
+          required
+          minlength="0"
+          maxlength="10"
+        /> <br><br>
+        <label for="resume">Upload resume</label>
+        <input type="file" name="resume" id="resume" accept=".pdf,.docx,.word" required>
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend><strong>Interest</strong></legend>
+        <select name="country" id="country" required>
+          <option value="">--chose your country</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="Newzealand">Newzealand</option>
+          <option value="SouthAfrica">South Africa</option>
+          <option value="Singapore">Singa pore</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option value="Italy">Italy</option>
+          <option value="Spain">Spain</option>
+          <option value="Russia">Russia</option>
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+          <option value="SouthKorea">South Korea</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Peru">Peru</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Turkey">Turkey</option>
+          <option value="SaudiArabia">Saudi Arabia</option>
+          <option value="UAE">UAE</option>
+                </select>
+        <br/><br/>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" >      
+        <br/><br/>
+        <label for=""></label>
+        <p><strong> Select your Interest</strong></p>
+        <label for="music">Music</label>
+        <input type="checkbox" id="interest" name="music" value="Music">
+        <label for="sports">sports</label>
+        <input type="checkbox" id="interest" name="sports" value="sports">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="interest" name="reading" value="Reading">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox" id="interest" name="traveling" value="Traveling">
+        <label for="cooking">Cooking</label>
+        <input type="checkbox" id="interest" name="cooking" value="Cooking">
+        <label for="other">Other</label>
+        <input type="checkbox" id="interest" name="other" value="Other"><br><br>
+        <label for="Experience">Experience</label>
+        <input type="range" id="Experience"  name="Experience" min="0" max="10" value="0" oninput="exoutput.value=Experience.value">
+        <output id="exoutput">10</output>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Enter your Feedback</legend>
+        <textarea name=" feedback" id=" feedback" rows="7" cols="50" placeholder="Enter your feed  back abot ueser Experience"></textarea>
+      </fieldset>
+      <button type="submit"><strong>Submit</strong></button>
+      <button type="reset"><strong>Reset</strong></button>
+
+    </form>
+  </body>
+</html>
